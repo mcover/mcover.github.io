@@ -164,7 +164,7 @@ img { max-width: 100%; }
   font-weight: 400;
   margin-top: 70px;
   line-height: 30px;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 0.4px;
 }
 .content-details {
@@ -463,7 +463,6 @@ p {
   font-size: 22px;
   line-height: 40px;
   font-weight: 300;
-  text-align: justify;
 }
 #home h1 {
   line-height: 40px;
@@ -484,19 +483,19 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 .job {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 14px;
   letter-spacing: 0.4px;
   text-transform: uppercase;
-  color: #cccccc;
+  color: #999999;
 }
 .company {
-  font-size: 12px;
-  line-height: 14px;
-  border: 1px solid #ececec;
-  color: #cccccc;
-  padding:8px 10px;
+  font-size: 18px;
+  line-height: 18px;
+  border: 1px solid #cccccc;
+  color: #999999;
+  padding:10px 12px;
   border-radius: 6px;
   display: inline-block;
   margin-top: 5px;
