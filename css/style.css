@@ -459,10 +459,11 @@ h5 {
   font-family: 'Roboto Slab', serif;
 }
 p {
-  letter-spacing: 0.5px;
-  font-size: 13px;
-  line-height: 34px;
+  letter-spacing: 0.9px;
+  font-size: 22px;
+  line-height: 40px;
   font-weight: 300;
+  text-align: justify;
 }
 #home h1 {
   line-height: 40px;
@@ -1262,3 +1263,22 @@ ul.portfolio-image li .desc{
 }
 .skillst .count-bar .count { background-color: #818181;}
 .skillst .count-bar .count span:after { border-top: 4px solid #818181;}
+
+
+.vertical-container {
+  height: inherit;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.horizontal-container {
+  height: inherit;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+}
