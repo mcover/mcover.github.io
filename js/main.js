@@ -153,7 +153,15 @@
           width:jQuery(this).attr('data-percent')
         },3000);
         var percent = jQuery(this).attr('data-percent');
-        jQuery(this).find('.count').html('<span>' + percent + '</span>');
+        var number = jQuery(this).attr('data-percent').replace('%', '');
+        if (number >= 90) {
+          jQuery(this).find('.count').html('<span>' + 'Mastery' + '</span>');
+        } else if (number >= 60) {
+          jQuery(this).find('.count').html('<span>' + 'Skilled' + '</span>');
+        } else {
+          jQuery(this).find('.count').html('<span>' + 'Proficient' + '</span>');
+        }
+
       });
     }); 
 
