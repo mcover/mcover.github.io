@@ -338,7 +338,7 @@ img { max-width: 100%; }
 .menu,
 .menu-list {
   height: 100%;     
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 .menu-list {
   -webkit-transform: translate3d(0, 100%, 0);

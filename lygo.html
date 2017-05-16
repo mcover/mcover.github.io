@@ -1,59 +1,145 @@
-<!doctype html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Snakes</title>
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
-    <script src="TemplateData/UnityProgress.js"></script>
-  </head>
-  <body class="template">
-    <div class="template-wrap clear">
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
-      <br>
-      <div class="logo"></div>
-      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
-      <div class="title">Snakes</div>
-      <br>
-      <br>
-      <br>
-<p>      Lygo is a minimalist exploration game for Android tablets. 
-  We started with the idea of home, particularly leaving home. 
-  Our team wanted to focus on the reasons we leave home, what it feels like to leave,
-  and what it feels like when we return to our previous homes.  </p>
-<p>Our team was made up of four people:  Einat Daniel-Krumholtz, Gregory Kogos, Eyal Stern, and me.    I
- was responsible for programming, project management, some level design, and some of the art assets.  
-  This game was made in conjunction with the MIT Game Lab and the Shenkar Institute in Tel Aviv.  </p>
+<!DOCTYPE html>
+<html lang="en">
+<title>Miranda Cover</title>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Bodo - Simple One Page Personal" name="description">
+<meta content="BdgPixel" name="author">
+<!--Fav-->
+<link href="images/favicon.ico" rel="shortcut icon">
 
-<p>Lygo was developed in Unity 5, using C# scripts, under the guidance of Philip Tan of the MIT Game Lab.  </p>
+<!--styles-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/owl.theme.css" rel="stylesheet">
+<link href="css/magnific-popup.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
 
+<!--fonts google-->
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Unity WebGL Player - Lygo Demo</title>
+<link rel="stylesheet" href="TemplateData/style.css">
+<link rel="shortcut icon" href="TemplateData/favicon.ico">
+<script src="TemplateData/UnityProgress.js"></script>
+
+<!--[if lt IE 9]>
+   <script type="text/javascript" src="js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+    <!--HEADER -->
+    <div class="header">
+      <div class="for-sticky">
+        <!--LOGO-->
+        <div class="col-md-2 col-xs-6 logo">
+          <a href="index.html"><img alt="logo" class="logo-nav" src="images/logo.png"></a>
+        </div>
+        <!--/.LOGO END-->
+      </div>
+      <div class="menu-wrap">
+        <nav class="menu">
+          <div class="menu-list">
+            
+          </div>
+        </nav>
+        <button class="close-button" id="close-button">Close Menu</button>
+      </div>
+      <button class="menu-button" id="open-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button><!--/.for-sticky-->
     </div>
+    <!--/.HEADER END-->
+
+      <!--CONTENT WRAP-->
+      <div class="content-wrap">
+        <!--CONTENT-->
+        <div class="content">
+          <!--HOME-->
+          
+          <!--/.HOME END-->
+
+          <!--ABOUT-->
+          <!--/.ABOUT END-->
+
+          <!--WORK-->
+          <section class="grey-bg mar-tm-10" id="work">
+            <div class="container">
+
+                  
+<body class="demo-lygo" cz-shortcut-listen="true">
+    <div class="demo-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="1100px"></canvas>
+      <div class="unity-logo"></div>
+      <div class="fullscreen"><img src="TemplateData/fullscreen.png" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" width="38" height="38"></div>
+      <div class="title">Lygo</div>
+
     <script type='text/javascript'>
   var Module = {
     TOTAL_MEMORY: 268435456,
-    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    errorhandler: null,  // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
     compatibilitycheck: null,
     backgroundColor: "#222C36",
     splashStyle: "Light",
-    dataUrl: "Release/mcover.github.io.data",
-    codeUrl: "Release/mcover.github.io.js",
-    asmUrl: "Release/mcover.github.io.asm.js",
-    memUrl: "Release/mcover.github.io.mem",
+    dataUrl: "Lygo-Release/mcover.github.io.data",
+    codeUrl: "Lygo-Release/mcover.github.io.js",
+    asmUrl: "Lygo-Release/mcover.github.io.asm.js",
+    memUrl: "Lygo-Release/mcover.github.io.mem",
   };
 </script>
-<script src="Release/UnityLoader.js"></script>
+<script src="Lygo-Release/UnityLoader.js"></script>
 
-    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="js/jquery.appear.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/classie.js" type="text/javascript"></script>
-    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
-    <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
-    <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
-    <script src="js/masonry.js" type="text/javascript"></script>
-    <script src="js/smooth-scroll.min.js" type="text/javascript"></script>
-    <script src="js/typed.js" type="text/javascript"></script>
-    <script src="js/main.js" type="text/javascript"></script>
-  </body>
-</html>
+
+</body>
+
+
+
+
+
+                  <p class="content-detail">
+Lygo is a minimalist exploration game for Android tablets. We started with the idea of home, particularly leaving home. Our team wanted to focus on the reasons we leave home, what it feels like to leave, and what it feels like when we return to our previous homes. 
+<br>
+Our team was made up of four people: Einat Daniel-Krumholtz, Gregory Kogos, Eyal Stern, and me. I was responsible for programming, project management, some level design, and some of the art assets. This game was made in conjunction with the MIT Game Lab and the Shenkar Institute in Tel Aviv.
+<br>
+Lygo was developed in Unity 5, using C# scripts, under the guidance of Philip Tan of the MIT Game Lab.
+                  </p>
+          </section>
+          <!--/.WORK END-->
+
+         
+                         <!--FOOTER-->
+                         <footer>
+                          
+                           <div class="footer-bottom">
+                             <div class="container">
+                             </div>
+                           </div>
+                         </footer>
+                         <!--/.FOOTER-END-->
+
+                       <!--/.CONTENT END-->
+                       </div>
+                     <!--/.CONTENT-WRAP END-->
+                     </div>
+
+
+                     <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+                     <script src="js/jquery.appear.js" type="text/javascript"></script>
+                     <script src="js/bootstrap.min.js" type="text/javascript"></script>
+                     <script src="js/classie.js" type="text/javascript"></script>
+                     <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+                     <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+                     <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+                     <script src="js/masonry.js" type="text/javascript"></script>
+                     <script src="js/smooth-scroll.min.js" type="text/javascript"></script>
+                     <script src="js/typed.js" type="text/javascript"></script>
+                     <script src="js/main.js" type="text/javascript"></script>
+                   </body>
+                 </html>
