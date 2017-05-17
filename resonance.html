@@ -1,52 +1,103 @@
+<!doctype html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Resonance</title>
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
-    <script src="TemplateData/UnityProgress.js"></script>
-  </head>
-  <body class="template">
-    <div class="template-wrap clear">
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
-      <br>
-      <div class="logo"></div>
-      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
-      <div class="title">Resonance</div>
-      <br>
-      <br>
-      <br>
-      <p> Resonance was initially a product of the 2017 Global Game Jam at the MIT location. The theme of the game jam was waves and our team decided to focus on the idea of
-      sound waves. We liked the idea of being able to create music through playing the game so we ran with that idea. By the end of the game jam we had a sandbox prototype of our game with
-      sources, multiple types of emitters, mobile and immobile objects, basic UI, and the ability to add emitters to the board through that UI.
-      </p>
-      <p>Our team was made up of: Nathaniel Jordan, Courtney Clark, Diana Liao, Dr. Robert Pitts, and me. On this team I was responsible for
-        project management, programming, debugging, documentation, prefab generation, and UI implementation. </p>
+<head>
+  <html lang="en">
+  <title>Miranda Cover</title>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Bodo - Simple One Page Personal" name="description">
+  <meta content="BdgPixel" name="author">
+  <!--Fav-->
+  <link href="images/favicon.ico" rel="shortcut icon">
 
-      <p> For future development, I intend to implement multiple goal types, a structure of consecutive levels, a parse system to create levels in the unity scene from a script file, a more
-        complete and intuitive UI, and obstacles which affect the path of the waves.
-      </p>
+  <!--styles-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/owl.theme.css" rel="stylesheet">
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!--fonts google-->
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 
 
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Unity WebGL Player | Resonance</title>
+  <link rel="stylesheet" href="ResonanceRelease/TemplateData/style.css">
+  <link rel="shortcut icon" href="ResonanceRelease/TemplateData/favicon.ico" />
+  <script src="ResonanceRelease/TemplateData/UnityProgress.js"></script>
+</head>
+
+
+<body class="template">
+
+  <!--HEADER -->
+  <div class="header">
+    <div class="for-sticky">
+      <!--LOGO-->
+      <div class="col-md-2 col-xs-6 logo">
+        <a href="index.html"><img alt="logo" class="logo-nav" src="images/logo.png"></a>
+      </div>
+      <!--/.LOGO END-->
     </div>
-    <script type='text/javascript'>
-  var Module = {
-    TOTAL_MEMORY: 268435456,
-    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    <div class="menu-wrap">
+      <nav class="menu">
+        
+      </nav>
+      <button class="close-button" id="close-button">Close Menu</button>
+    </div>
+    <button class="menu-button" id="open-button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button><!--/.for-sticky-->
+  </div>
+
+  <!--CONTENT WRAP-->
+  <div class="content-wrap">
+    <!--CONTENT-->
+    <div class="content">
+      <div class="template-wrap clear" style="padding-top:1000px">
+        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+        <br>
+        <div class="unity-logo"></div>
+        <div class="fullscreen"><img src="ResonanceRelease/TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+        <div class="title">Resonance</div>
+      </div>
+      <script type='text/javascript'>
+      var Module = {
+        TOTAL_MEMORY: 268435456,
+    errorhandler: null,     // arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
     compatibilitycheck: null,
     backgroundColor: "#222C36",
     splashStyle: "Light",
-    dataUrl: "Release/Desktop.data",
-    codeUrl: "Release/Desktop.js",
-  //  codeUrl: "https://www.dropbox.com/s/iizzqeqn029g1fx/Desktop.jsgz?dl=0",
-    asmUrl: "Release/Desktop.asm.js",
+    dataUrl: "ResonanceRelease/Release/ResonanceRelease.data",
+    codeUrl: "ResonanceRelease/Release/ResonanceRelease.js",
+    asmUrl: "ResonanceRelease/Release/ResonanceRelease.asm.js",
+    memUrl: "ResonanceRelease/Release/ResonanceRelease.mem",
+    //codeUrl: "https://www.dropbox.com/s/iizzqeqn029g1fx/Desktop.jsgz?dl=0",
     //asmUrl: "https://www.dropbox.com/s/hcat076j1lbgpxj/Desktop.asm.jsgz?dl=0",
-    memUrl: "Release/Desktop.mem",
     //memUrl: "https://www.dropbox.com/s/t1qbh63wqtglote/Desktop.memgz?dl=0",
   };
-</script>
-<script src="Release/UnityLoader.js"></script>
-
-  </body>
+  </script>
+  <script src="ResonanceRelease/Release/UnityLoader.js"></script>
+  <section class="grey-bg mar-tm-10" id="work">
+    <div class="container">
+      <h3 class="title-small" style="font-size:30px;">
+        <span>Resonance</span>
+      </h3>
+      <p class="content-detail">
+        Resonance was initially a product of the 2017 Global Game Jam at the MIT location. The theme of the game jam was waves and our team decided to focus on the idea of sound waves. We liked the idea of being able to create music through playing the game so we ran with that idea. By the end of the game jam we had a sandbox prototype of our game with sources, multiple types of emitters, mobile and immobile objects, basic UI, and the ability to add emitters to the board through that UI.
+        <br>
+        Our team was made up of: Nathaniel Jordan, Courtney Clark, Diana Liao, Dr. Robert Pitts, and me. On this team I was responsible for project management, programming, debugging, documentation, prefab generation, and UI implementation. 
+        <br>
+        For future development, I intend to implement multiple goal types, a structure of consecutive levels, a parse system to create levels in the unity scene from a script file, a more complete and intuitive UI, and obstacles which affect the path of the waves.</p></div>
+      </div>
+    </section>
+  </div>
+</div>
+</body>
 </html>

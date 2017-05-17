@@ -1,97 +1,75 @@
 <!doctype html>
 <html lang="en-us">
-  <head>
-    <html lang="en">
-    <title>Miranda Cover</title>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="Bodo - Simple One Page Personal" name="description">
-    <meta content="BdgPixel" name="author">
-    <!--Fav-->
-    <link href="images/favicon.ico" rel="shortcut icon">
+<head>
+  <html lang="en">
+  <title>Miranda Cover</title>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Bodo - Simple One Page Personal" name="description">
+  <meta content="BdgPixel" name="author">
+  <!--Fav-->
+  <link href="images/favicon.ico" rel="shortcut icon">
 
-    <!--styles-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
-    <link href="css/magnific-popup.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
+  <!--styles-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/owl.theme.css" rel="stylesheet">
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
 
-    <!--fonts google-->
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
-
-
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Snakes</title>
-    <link rel="stylesheet" href="SnakesRelease/TemplateData/style.css">
-    <link rel="shortcut icon" href="SnakesRelease/TemplateData/favicon.ico" />
-    <script src="SnakesRelease/TemplateData/UnityProgress.js"></script>
-  </head>
+  <!--fonts google-->
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 
 
-  <body class="template">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Unity WebGL Player | Snakes</title>
+  <link rel="stylesheet" href="SnakesRelease/TemplateData/style.css">
+  <link rel="shortcut icon" href="SnakesRelease/TemplateData/favicon.ico" />
+  <script src="SnakesRelease/TemplateData/UnityProgress.js"></script>
+</head>
 
-    <!--HEADER -->
-    <div class="header">
-      <div class="for-sticky">
-        <!--LOGO-->
-        <div class="col-md-2 col-xs-6 logo">
-          <a href="index.html"><img alt="logo" class="logo-nav" src="images/logo.png"></a>
-        </div>
-        <!--/.LOGO END-->
+
+<body class="template">
+
+  <!--HEADER -->
+  <div class="header">
+    <div class="for-sticky">
+      <!--LOGO-->
+      <div class="col-md-2 col-xs-6 logo">
+        <a href="index.html"><img alt="logo" class="logo-nav" src="images/logo.png"></a>
       </div>
-      <div class="menu-wrap">
-        <nav class="menu">
-          <div class="menu-list">
-            <a data-scroll="" href="#home" class="active">
-              <span>Home</span>
-            </a>
-            <a data-scroll="" href="#about">
-              <span>About</span>
-            </a>
-            <a data-scroll="" href="#work">
-              <span>Projects</span>
-            </a>
-             <a data-scroll="" href="#services">
-              <span>Resume</span>
-            </a>
-            <a data-scroll="" href="#employement">
-              <span>Experience</span>
-            </a>
-            <a data-scroll="" href="#skill">
-              <span>Skills</span>
-            </a>
-          </div>
-        </nav>
-        <button class="close-button" id="close-button">Close Menu</button>
+      <!--/.LOGO END-->
+    </div>
+    <div class="menu-wrap">
+      <nav class="menu">
+
+      </nav>
+      <button class="close-button" id="close-button">Close Menu</button>
+    </div>
+    <button class="menu-button" id="open-button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button><!--/.for-sticky-->
+  </div>
+
+  <!--CONTENT WRAP-->
+  <div class="content-wrap">
+    <!--CONTENT-->
+    <div class="content">
+      <div class="template-wrap clear" style="padding-top:1000px">
+        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+        <br>
+        <div class="unity-logo"></div>
+        <div class="fullscreen"><img src="SnakesRelease/TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+        <div class="title">Snakes</div>
       </div>
-      <button class="menu-button" id="open-button">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button><!--/.for-sticky-->
-    </div>
-
-<!--CONTENT WRAP-->
-      <div class="content-wrap">
-        <!--CONTENT-->
-        <div class="content">
-
-
-
-    <div class="template-wrap clear" style="padding-top:1000px">
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
-      <br>
-      <div class="unity-logo"></div>
-      <div class="fullscreen"><img src="SnakesRelease/TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
-      <div class="title">Snakes</div>
-    </div>
-    <script type='text/javascript'>
-  var Module = {
-    TOTAL_MEMORY: 268435456,
+      <script type='text/javascript'>
+      var Module = {
+        TOTAL_MEMORY: 268435456,
     errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
     compatibilitycheck: null,
     backgroundColor: "#222C36",
@@ -101,24 +79,24 @@
     asmUrl: "SnakesRelease/Release/SnakesRelease.asm.js",
     memUrl: "SnakesRelease/Release/SnakesRelease.mem",
   };
-</script>
-<script src="SnakesRelease/Release/UnityLoader.js"></script>
-          <section class="grey-bg mar-tm-10" id="work">
-            <div class="container">
-              <h3 class="title-small" style="font-size:30px;">
-                    <span>Snake-Time Continuum</span>
-                  </h3>
-                  <p class="content-detail">
-This is a game that I made on a five person team over the course of 2 weeks for CMS.611 Creating Videogames. On this game I was responsible for Art, UI Design and Implementation, and QA and Debugging. I also did a lot of the integrating of back-end code with Unity and implementing of the Art. This game was made in Unity 5 with C#. The link to an older web version can be found below.
-<br>
-My team members were Nayeon Kim, Forrest Moret, Jorrie Brettin, and Giulio Gueltrini, all of whom are students at MIT.
-<br>
-I wish that we had had more time to develop this game. Because this was only a two week project, we ended up having to cut features that some people on the team felt were crucial to the game. Given our time frame, I do feel that we accomplished a lot and captured most of what we wanted from our original design.
-<br>
-Lygo was developed in Unity 5, using C# scripts, under the guidance of Philip Tan of the MIT Game Lab.</p></div>
-</div>
-</section>
-</div>
+  </script>
+  <script src="SnakesRelease/Release/UnityLoader.js"></script>
+  <section class="grey-bg mar-tm-10" id="work">
+    <div class="container">
+      <h3 class="title-small" style="font-size:30px;">
+        <span>Snake-Time Continuum</span>
+      </h3>
+      <p class="content-detail">
+        This is a game that I made on a five person team over the course of 2 weeks for CMS.611 Creating Videogames. On this game I was responsible for Art, UI Design and Implementation, and QA and Debugging. I also did a lot of the integrating of back-end code with Unity and implementing of the Art. This game was made in Unity 5 with C#. A playable verison can be found below; you will probably need to use Firefox.
+        <br>
+        My team members were Nayeon Kim, Forrest Moret, Jorrie Brettin, and Giulio Gueltrini, all of whom are students at MIT.
+        <br>
+        I wish that we had had more time to develop this game. Because this was only a two week project, we ended up having to cut features that some people on the team felt were crucial to the game. Given our time frame, I do feel that we accomplished a lot and captured most of what we wanted from our original design.
+        <br>
+        Lygo was developed in Unity 5, using C# scripts, under the guidance of Philip Tan of the MIT Game Lab.</p></div>
+      </div>
+    </section>
+  </div>
 </div>
 </body>
 </html>
