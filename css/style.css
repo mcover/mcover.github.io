@@ -88,6 +88,10 @@ img { max-width: 100%; }
   outline: none;
 }
 
+.link {
+  text-decoration: underline;
+}
+
 /*----------------------------------------- 2) Preloader --------------------------------------------------*/
 #preloader {
   position: fixed;
