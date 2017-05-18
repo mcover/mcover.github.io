@@ -1250,6 +1250,10 @@ ul.portfolio-image li .desc{
   border-top: 10px solid #818181;
 }
 
+.flexcontainer {
+   display: -webkit-flex;
+   display: flex;
+}
 
 .vertical-container {
   height: inherit;
